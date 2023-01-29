@@ -1,0 +1,26 @@
+[
+    {
+        "id": "p1",
+        "path": "orderstest",
+        "method": "POST",
+        "scopes": [
+            "create_order"
+        ]
+    },
+    {
+        "id": "p2",
+        "path": "orderstest",
+        "method": "GET",
+        "scopes": [
+            "retrieve_orders"
+        ]
+    },
+    {
+        "id": "p3",
+        "path": "orderstest/{order_id}",
+        "method": "PUT",
+        "scopes": [
+            "update_order"
+        ]
+    }
+]
