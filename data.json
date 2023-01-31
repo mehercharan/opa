@@ -1,73 +1,28 @@
-{
-  "users": {
-    "alice": {
-      "roles": ["admin"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-    "bob": {
-      "roles": ["employee", "billing"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-    "eve": {
-      "roles": ["customer"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    }
-  },
-  "role_permissions": {
-    "customer": [
-      {
-        "action": "read",
-        "type": "dog"
-      },
-      {
-        "action": "read",
-        "type": "cat"
-      },
-      {
-        "action": "adopt",
-        "type": "dog"
-      },
-      {
-        "action": "adopt",
-        "type": "cat"
-      }
-    ],
-    "employee": [
-      {
-        "action": "read",
-        "type": "dog"
-      },
-      {
-        "action": "read",
-        "type": "cat"
-      },
-      {
-        "action": "update",
-        "type": "dog"
-      },
-      {
-        "action": "update",
-        "type": "cat"
-      }
-    ],
-    "billing": [
-      {
-        "action": "read",
-        "type": "finance"
-      },
-      {
-        "action": "update",
-        "type": "finance"
-      }
+[
+        {
+            "name": "alice",
+            "subordinates": [
+                "bob",
+                "john"
+            ]
+        },
+        {
+            "name": "bob",
+            "subordinates": [
+                "carol",
+                "david"
+            ]
+        },
+        {
+            "name": "carol",
+            "subordinates": []
+        },
+        {
+            "name": "david",
+            "subordinates": []
+        },
+        {
+            "name": "john",
+            "subordinates": []
+        }
     ]
-  }
-}
