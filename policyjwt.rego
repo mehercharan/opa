@@ -35,5 +35,5 @@ token = {"payload": payload} {
 
 is_valid = {"valid": valid} {
   [valid, header, payload] := io.jwt.decode_verify(input.token, {
-          "cert": certificate, "aud": "*.ecomm.com"})
+          "cert": certificate, "aud": "*.ecomm1.com"})
 }
