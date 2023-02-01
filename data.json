@@ -15,7 +15,7 @@
         },
         {
             "name": "carol",
-            "subordinates": []
+            "subordinates": ["david"]
         },
         {
             "name": "david",
